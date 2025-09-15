@@ -144,8 +144,8 @@ services:
         image: jwilder/nginx-proxy
         container_name: nginx-proxy
         ports:
-          - "80:80"
-          - "443:443"
+          - "4000:4000"
+          - "4400:4400"
         volumes:
           - /var/run/docker.sock:/tmp/docker.sock:ro
-          - /home/overleaf/tmp:/etc/nginx/certs
+          - ~/overleaf/tmp:/etc/nginx/certs
